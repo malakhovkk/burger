@@ -1,0 +1,34 @@
+.navigation
+{
+  margin-left: 70px;
+  display: flex;
+  align-items: center;
+  &__menu
+  {
+    display:flex;
+    flex-direction:row;
+  }
+  &__item
+  {
+    &:nth-child(1)
+    {
+      list-style-type: none;
+    }
+    margin-left:30px;
+    color:white;
+    &:hover a
+    {
+      text-decoration: underline;
+    }
+    a
+    {
+      color:white;
+      font-family: Ubuntu-Regular;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 30px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+}

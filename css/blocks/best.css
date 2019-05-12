@@ -1,0 +1,52 @@
+.best {
+  background-size: 100%;
+  width: 100vw;
+  height: 650px;
+  background-image: url("../img/we_are_the_best.png"); }
+  .best__title {
+    font-family: Gagalin-Regular;
+    font-size: 72px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .best__item {
+    width: 281px; }
+  .best__items {
+    padding-top: 30px;
+    padding-left: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .best__caption {
+    font-family: Lifehack Medium;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center; }
+  .best__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .best__description {
+    text-align: center;
+    opacity: 0.8;
+    color: #2f3234;
+    font-family: Ubuntu-Regular;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24.02px; }

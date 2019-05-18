@@ -1,0 +1,20 @@
+.caption
+{
+  width:406px;
+  padding-top:152px;
+  margin-left:11px;
+  &__wemake
+  {
+    color: #f9b43b;
+    font-family: Gagalin-Regular;
+    font-size: 72px;
+    font-weight: 400;
+  }
+  &__burgers
+  {
+    font-family: Lifehack Medium;
+    font-size: 65px;
+    line-height: 65px;
+    color:white;
+  }
+}

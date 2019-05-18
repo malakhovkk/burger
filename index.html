@@ -13,7 +13,9 @@
 			<div class="container">
 				<header class="header">
 					<div class="logo">
-						<img src="img/logo.png">
+						<svg class="logo__svg">
+							<use xlink:href="./svg/sprite.svg#logo"></use>
+						</svg>
 					</div>
 					<nav class="navigation">
 						<ul class="navigation__menu">
@@ -41,13 +43,13 @@
 						</ul>
 					</nav>
 					<div class="order">
-					<a href="#">Заказать</a>
+					<a class="order__link" href="#">Заказать</a>
 					</div>
 					</header>
 
 				<div class="main">
 					<div class="burger">
-						<img src="img/burger.png">
+						<img class="burger__link" src="img/burger.png">
 					</div>
 					<div class="caption">
 						<div class="caption__wemake">
@@ -60,8 +62,8 @@
 
 				</div>
 				<div class="down">
-					<a href="#">
-						<img src="img/arrow-scroll.png">
+					<a class="down__link" href="#">
+						<img class="down__img" src="img/arrow-scroll.png">
 					</a>
 				</div>
 			</div>
@@ -69,51 +71,52 @@
 
 		<section class="best">
 			<div class="container">
-					<div class="best__title">
-						Мы лучшие
+
+						<div class="best__title">
+							Мы лучшие
+						</div>
+						<ul class="best__items">
+							<li class="best__item">
+								<div class="best__icon">
+									<img class="best__img-meat" src="img/meat.png">
+								</div>
+								<div class="best__caption">
+									100% свежее мясо
+								</div>
+								<div class="best__description">
+									Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+								</div>
+							</li>
+							<li class="best__item">
+								<div class="best__icon">
+									<img class="best__img-hand" src="img/hand.png">
+								</div>
+								<div class="best__caption">
+									Ручная сборка
+								</div>
+								<div class="best__description">
+									Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.
+								</div>
+							</li>
+							<li class="best__item">
+								<div class="best__icon">
+									<img class="best__img-natural" src="img/natural.png">
+								</div>
+								<div class="best__caption">
+										Натуральные ингредиенты
+								</div>
+								<div class="best__description">
+									Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
+								</div>
+							</li>
+						</ul>
 					</div>
-					<ul class="best__items">
-						<li class="best__item">
-							<div class="best__icon">
-								<img class="best__img-meat" src="img/meat.png">
-							</div>
-							<div class="best__caption">
-								100% свежее мясо
-							</div>
-							<div class="best__description">
-								Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
-							</div>
-						</li>
-						<li class="best__item">
-							<div class="best__icon">
-								<img class="best__img-hand" src="img/hand.png">
-							</div>
-							<div class="best__caption">
-								Ручная сборка
-							</div>
-							<div class="best__description">
-								Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.
-							</div>
-						</li>
-						<li class="best__item">
-							<div class="best__icon">
-								<img class="best__img-natural" src="img/natural.png">
-							</div>
-							<div class="best__caption">
-									Натуральные ингредиенты
-							</div>
-							<div class="best__description">
-								Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
+
 		</section>
 		<section class="reviews">
 				<ul class="reviews__list">
 					<li class="reviews__item">
-						<img src="./img/_photo1.png" alt="отзыв" class="reviews__avatar">
+						<img src="./img/photo1.png" alt="отзыв" class="reviews__avatar">
 	          <div class="reviews__hover">
 	            <h3 class="reviews__title">Константин Спилберг</h3>
 	            <div class="reviews__text">
@@ -125,7 +128,7 @@
 	          </div>
 					</li>
 					<li class="reviews__item">
-						<img src="./img/_photo2.png" alt="отзыв" class="reviews__avatar">
+						<img src="./img/photo2.png" alt="отзыв" class="reviews__avatar">
 	          <div class="reviews__hover">
 	            <h3 class="reviews__title">Константин Спилберг</h3>
 	            <div class="reviews__text">
@@ -137,7 +140,7 @@
 	          </div>
 					</li>
 					<li class="reviews__item">
-						<img src="./img/_photo3.png" alt="отзыв" class="reviews__avatar">
+						<img src="./img/photo3.png" alt="отзыв" class="reviews__avatar">
 	          <div class="reviews__hover">
 	            <h3 class="reviews__title">Константин Спилберг</h3>
 	            <div class="reviews__text">
@@ -149,7 +152,7 @@
 	          </div>
 					</li>
 					<li class="reviews__item">
-						<img src="./img/_photo4.png" alt="отзыв" class="reviews__avatar">
+						<img src="./img/photo4.png" alt="отзыв" class="reviews__avatar">
 	          <div class="reviews__hover">
 	            <h3 class="reviews__title">Константин Спилберг</h3>
 	            <div class="reviews__text">
@@ -161,7 +164,7 @@
 	          </div>
 					</li>
 					<li class="reviews__item">
-						<img src="./img/_photo5.png" alt="отзыв" class="reviews__avatar">
+						<img src="./img/photo5.png" alt="отзыв" class="reviews__avatar">
 	          <div class="reviews__hover">
 	            <h3 class="reviews__title">Константин Спилберг</h3>
 	            <div class="reviews__text">
@@ -173,7 +176,7 @@
 	          </div>
 					</li>
 					<li class="reviews__item">
-						<img src="./img/_photo6.png" alt="отзыв" class="reviews__avatar">
+						<img src="./img/photo6.png" alt="отзыв" class="reviews__avatar">
 	          <div class="reviews__hover">
 	            <h3 class="reviews__title">Константин Спилберг</h3>
 	            <div class="reviews__text">
@@ -185,7 +188,7 @@
 	          </div>
 					</li>
 					<li class="reviews__item">
-						<img src="./img/_photo7.png" alt="отзыв" class="reviews__avatar">
+						<img src="./img/photo7.png" alt="отзыв" class="reviews__avatar">
 	          <div class="reviews__hover">
 	            <h3 class="reviews__title">Константин Спилберг</h3>
 	            <div class="reviews__text">
@@ -197,7 +200,7 @@
 	          </div>
 					</li>
 					<li class="reviews__item">
-						<img src="./img/_photo8.png" alt="отзыв" class="reviews__avatar">
+						<img src="./img/photo8.png" alt="отзыв" class="reviews__avatar">
 	          <div class="reviews__hover">
 	            <h3 class="reviews__title">Константин Спилберг</h3>
 	            <div class="reviews__text">
@@ -209,6 +212,92 @@
 	          </div>
 					</li>
 				</ul>
+		</section>
+		<section class="team">
+			<div class="container">
+				<div class="team__accordeon">
+					<div class="team__name">
+						Команда
+					</div>
+					<div class="team__member">
+
+						<div class="team__fullname">
+							Дэниэл Редклиф
+						</div>
+						<div class="team__description">
+							<div class="team__avatar">
+								<img class="team__img_avatar" src="./img/avatar.png">
+							</div>
+							<div class="team__right">
+								<div class="team__job">
+									Оператор
+								</div>
+								<div class="team__remark">
+									С радостью поможет подобрать идеальный бургер и оформить заказ.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="team__member--active">
+
+						<div class="team__fullname">
+							Ричард Джеймс
+						</div>
+						<div class="team__description">
+							<div class="team__avatar">
+								<img class="team__img_avatar" src="./img/avatar.png">
+							</div>
+							<div class="team__right">
+								<div class="team__job">
+									Оператор
+								</div>
+								<div class="team__remark">
+									С радостью поможет подобрать идеальный бургер и оформить заказ.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="team__member">
+
+						<div class="team__fullname">
+							Джейк Финн
+						</div>
+						<div class="team__description">
+							<div class="team__avatar">
+								<img class="team__img_avatar" src="./img/avatar.png">
+							</div>
+							<div class="team__right">
+								<div class="team__job">
+									Оператор
+								</div>
+								<div class="team__remark">
+									С радостью поможет подобрать идеальный бургер и оформить заказ.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="team__member">
+
+						<div class="team__fullname">
+							Николай Иванов
+						</div>
+						<div class="team__description">
+							<div class="team__avatar">
+								<img class="team__img_avatar" src="./img/avatar.png">
+							</div>
+							<div class="team__right">
+								<div class="team__job">
+									Оператор
+								</div>
+								<div class="team__remark">
+									С радостью поможет подобрать идеальный бургер и оформить заказ.
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
 		</section>
 	</div>
 	<ul class="points">

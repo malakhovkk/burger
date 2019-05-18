@@ -1,0 +1,137 @@
+.team
+{
+  position: relative;
+  background-size: 100%;
+  width:100%;
+  min-height: 650px;
+  height:100vh;
+  background-image: url("../img/team_background.png");
+  background-repeat: no-repeat;
+  &__accordeon
+  {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width:50%;
+    background-color: #2f3234;
+    opacity: 0.93;
+    min-height: 650px;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__name
+  {
+    text-transform: uppercase;
+    font-family: Gagalin-Regular;
+    font-size: 72px;
+    font-weight: 400;
+    color: #f9b43b;
+    padding-bottom:56px;
+  }
+  &__member
+  {
+    width: 347px;
+    padding-top: 35px;
+    .team__description
+    {
+      height: 0;
+      overflow: hidden;
+    }
+    &--active
+    {
+      padding-top: 35px;
+      width: 347px;
+      display: flex;
+      flex-direction: column;
+      .team__fullname
+      {
+        color:#f9b43b;
+        &::before
+        {
+          content: '';
+          position: absolute;
+          left:-15px;
+
+          border: 7px solid transparent;
+          border-bottom-color: #f9b43b;;
+          border-top: 0;
+        }
+      }
+
+    }
+  }
+  &__right
+  {
+    margin-left: 21px;
+  }
+  &__triangle
+  {
+    display: flex;
+    align-items: center;
+  }
+  &__img_triangle
+  {
+    width: 9px;
+  }
+  &__fullname
+  {
+    position: relative;
+    padding-left:10px;
+    color: #ffffff;
+    font-family: Gagalin-Regular;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    &::before
+    {
+      content: '';
+      position: absolute;
+      left:-15px;
+
+      border: 7px solid transparent;
+      border-top-color: #f9b43b;;
+      border-bottom: 0;
+    }
+  }
+  &__img_avatar
+  {
+    width:100px;
+    border-radius: 50%;
+  }
+  &__description
+  {
+    padding-top: 17px;
+    display: flex;
+    flex-direction: row;
+  }
+  &__right
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  &__remark
+  {
+    width: 208px;
+    padding-top: 20px;
+  }
+  &__job, &__remark
+  {
+
+    color: #ffffff;
+    font-family: Ubuntu-Regular;
+    font-size: 14px;
+  }
+  &__job
+  {
+    font-weight: 700;
+  }
+  &__remark
+  {
+    font-weight:300;
+  }
+
+}

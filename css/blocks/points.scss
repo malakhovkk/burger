@@ -1,5 +1,9 @@
 .active
 {
+  @include tablets
+  {
+    display: none;
+  }
   position: relative;
   padding-bottom: 10px;
   padding-left:7px;
@@ -9,9 +13,9 @@
   &::after
   {
     content:"";
-    width:16px;
-    height:16px;
-    margin-right:40px;
+    width:rem(16px);
+    height:rem(16px);
+    margin-right:rem(40px);
     position:absolute;
     border: 1px solid #ffffff;
     border-radius: 50%;
@@ -20,8 +24,12 @@
 }
 .non-active
 {
-  padding-bottom: 10px;
-  padding-left:7px;
+  @include tablets
+  {
+    display: none;
+  }
+  padding-bottom: rem(10px);
+  padding-left:rem(7px);
   list-style-type: none;
 }
 .points
@@ -31,8 +39,8 @@
   top:5%;
   &__item
   {
-    width: 6px;
-    height: 6px;
+    width: rem(6px);
+    height: rem(6px);
     border-radius: 50%;
     background-color: white;
   }

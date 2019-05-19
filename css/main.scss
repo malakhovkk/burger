@@ -1,9 +1,18 @@
+$phones: 480px;
+$tablets: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
+
 //normalize
 @import "_misc/normalize.scss";
 
 // setups
 @import "_misc/fonts.scss";
 @import "_misc/layouts.scss";
+
+//mdeia
+@import "_misc/media.scss";
 
 //blocks
 @import "blocks/hero.scss";
@@ -20,3 +29,10 @@
 @import "blocks/order.scss";
 @import "blocks/points.scss";
 @import "blocks/team.scss";
+@import "blocks/menublock.scss";
+@import "blocks/map.scss";
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
+@import "blocks/orderblock.scss";
+@import "blocks/clear.scss";
+@import "blocks/menu_button.scss";

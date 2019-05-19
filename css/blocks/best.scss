@@ -1,50 +1,64 @@
 .best
 {
-  background-size: 100%;
+  background-size: cover;
   width:100%;
-  min-height: 650px;
   height:100vh;
   background-image: url("../img/we_are_the_best.png");
   background-repeat: no-repeat;
+  min-height: rem(800px);
   &__img-hand
   {
-    width:73px;
+    width:rem(73px);
+    height: rem(97px);
   }
   &__img-meat
   {
-    width: 97px;
+    width: rem(97px);
+    height: rem(97px);
   }
   &__img-natural
   {
-    width: 88px;
+    width: rem(88px);
+    height: rem(97px);
+  }
+  &__text
+  {
+
   }
   &__title
   {
     font-family: Gagalin-Regular;
-    font-size: 72px;
+    font-size: rem(72px);
     font-weight: 400;
     text-transform: uppercase;
-    padding-top:120px;
     display: flex;
     justify-content: center;
   }
   &__item
   {
-    width:281px;
+    width:90%;
     list-style-type: none;
+    @include phones
+    {
+      display: flex;
+      flex-direction: row;
+    }
   }
   &__items
   {
-    padding-top:30px;
-    padding-left:80px;
+    padding-top:rem(30px);
     display: flex;
     flex-direction: row;
     justify-content: center;
+    @include phones
+    {
+      flex-direction: column;
+    }
   }
   &__caption
   {
     font-family: Lifehack Medium;
-    font-size: 24px;
+    font-size: rem(24px);
     font-weight: 500;
     text-align: center;
       padding-top: 33px;
@@ -57,13 +71,19 @@
   }
   &__description
   {
-    padding-top: 20px;
+    padding-top: rem(20px);
     text-align: center;
     opacity: 0.8;
     color: #2f3234;
     font-family: Ubuntu-Regular;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
-    line-height: 24.02px;
+    line-height: rem(24.02px);
+  }
+  .container
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }

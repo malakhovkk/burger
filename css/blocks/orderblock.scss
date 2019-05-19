@@ -1,0 +1,182 @@
+.orderblock
+{
+  background-image: url('../img/logos.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.93;
+  position: relative;
+  min-height: rem(800px);
+  &__form
+  {
+    padding-top: rem(30px);
+  }
+  &__caption
+  {
+    margin-bottom: rem(15px);
+  }
+  &__title
+  {
+    color: #f9b43b;
+    font-family: Gagalin-Regular;
+    font-size: rem(72px);
+    font-weight: 400;
+    padding-top: 10%;
+    text-align: center;
+  }
+  color:white;
+  font-family: Ubuntu-Regular;
+  &__double
+  {
+    display: flex;
+    flex-direction: row;
+    margin-bottom:rem(15px);
+  }
+  &__single
+  {
+    display: flex;
+    flex-direction: row;
+        margin-bottom:rem(15px);
+  }
+  &__first
+  {
+    width:45%;
+
+    margin-left: 5%;
+    float: left;
+    @include tablets
+    {
+      float:none;
+      width:90%;
+    }
+  }
+  &__block
+  {
+    width: 100%;
+    margin-left:20px;
+  }
+  &__input
+  {
+    width:100%;
+    border-radius: 5px;
+    border: 1px solid #d1cfcb;
+    padding:rem(7px);
+  }
+  &__poker
+  {
+    display: flex;
+    flex-direction: row;
+  }
+  &__second
+  {
+    @include tablets
+    {
+      float: none;
+      width: 90%;
+    }
+    float: left;
+    width:45%;
+    margin-left:5%;
+  }
+  &__comment
+  {
+    display: flex;
+    .orderblock__input
+    {
+      height:rem(109px);
+    }
+    @include phones
+    {
+      padding-top:rem(15px);
+    }
+  }
+  &__radio-hidden
+  {
+    position:relative;
+    background-color: white;
+    display: inline-block;
+    width: rem(16px);
+    height: rem(16px);
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+  &__radio-elem
+  {
+    position: absolute;
+    top:0;
+    left:rem(-99999px);
+  }
+  &__radio-checkbox-elem
+  {
+    position: absolute;
+    top:0;
+    left:rem(-99999px);
+  }
+  &__radio-block
+  {
+      display: flex;
+  }
+  &__radio-caption
+  {
+    display: inline-block;
+    padding-left: rem(8px);
+  }
+  &__radio-btn
+  {
+    padding-top:rem(20px);
+  }
+  &__radio
+  {
+    margin-right: rem(20px);
+  }
+  &__radio-checkbox-hidden
+  {
+    position:relative;
+    background-color: white;
+    display: inline-block;
+    width: rem(16px);
+    height: rem(16px);
+    border-radius: 3px;
+    vertical-align: middle;
+  }
+}
+.orderblock__radio-elem:checked + .orderblock__radio-hidden:after
+{
+  content : "";
+  width:rem(7px);
+  height:rem(7px);
+  position: absolute;
+  top:50%;
+  left:50%;
+  border-radius: 50%;
+  background: #e35028;
+  transform: translate(-50%, -50%);
+}
+.orderblock__radio-checkbox-elem:checked + .orderblock__radio-checkbox-hidden:after
+{
+  content: "";
+  width:rem(7px);
+  height:rem(5px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-left: 3px solid #e35028;
+  border-bottom: 3px solid #e35028;
+  transform: translate(-50%,-60%) rotate(-45deg);
+}
+.order_button
+{
+  color: white;
+  padding: rem(10px) rem(15px);
+  border-radius: 5px;
+  margin-left: rem(20px);
+  font-size: rem(13px);
+  font-weight: 500;
+  font-family: Ubuntu-Regular;
+  text-transform: uppercase;
+  background-color: #e45028;
+  border:1px solid #e45028;
+  margin-top:rem(10px);
+}

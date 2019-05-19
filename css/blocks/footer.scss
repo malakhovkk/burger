@@ -1,0 +1,63 @@
+.footer
+{
+  position: absolute;
+  bottom:0;
+  height: rem(60px);
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  @include phones
+  {
+    height:rem(116px);
+    flex-direction: column;
+  }
+  &__address
+  {
+    @include phones
+    {
+      width: 100%;
+    }
+    color:white;
+    font-family: Ubuntu-Regular;
+  }
+  &__left
+  {
+    padding-top: rem(10px);
+    padding-left: rem(80px);
+    @include phones
+    {
+      padding:rem(5px);
+      padding-top:rem(20px);
+      width: 100%;
+      text-align: center;
+    }
+    width: 50%;
+  }
+  &__right
+  {
+    @include phones
+    {
+      padding: rem(5px);
+      width:100%;
+      text-align: center;
+    }
+    padding-right: rem(81px);
+    padding-top: rem(20px);
+    width: 50%;
+  }
+  &__phone
+  {
+    @include phones
+    {
+      width: 100%;
+    }
+    font-family: Ubuntu-Regular;
+    color: #e45028;
+  }
+  &__img
+  {
+    width: rem(10px);
+    height: rem(10px);
+  }
+}

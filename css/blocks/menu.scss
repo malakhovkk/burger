@@ -1,6 +1,10 @@
 .navigation
 {
-  margin-left: 70px;
+  @include tablets
+  {
+    display: none;
+  }
+  margin-left: rem(35px);
   display: flex;
   align-items: center;
   &__menu
@@ -14,7 +18,7 @@
     {
       list-style-type: none;
     }
-    margin-left:30px;
+    margin-left:rem(25px);
     color:white;
     &:hover a
     {
@@ -24,9 +28,9 @@
     {
       color:white;
       font-family: Ubuntu-Regular;
-      font-size: 13px;
+      font-size: rem(13px);
       font-weight: 500;
-      line-height: 30px;
+      line-height: rem(30px);
       text-transform: uppercase;
       text-decoration: none;
     }

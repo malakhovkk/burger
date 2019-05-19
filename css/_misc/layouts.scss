@@ -14,7 +14,8 @@ body, html
   overflow: hidden;
 }
 .container {
-  width: 1100px;
+  max-width: rem(940px);
+  width: 95%;
   margin: 0 auto;
   height: 100%;
 }

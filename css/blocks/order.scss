@@ -1,6 +1,6 @@
 .order
 {
-  padding-top:25px;
+  padding-top:rem(25px);
   &:hover a
   {
     background-color: #c1401e;
@@ -11,10 +11,10 @@
     text-decoration: none;
     color:white;
 
-    padding: 10px 15px;
+    padding: rem(10px) rem(15px);
     border-radius: 5px;
-    margin-left:20px;
-    font-size: 13px;
+    margin-left:rem(20px);
+    font-size: rem(13px);
     font-weight: 500;
     font-family: Ubuntu-Regular;
     text-transform: uppercase;

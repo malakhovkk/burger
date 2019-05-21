@@ -2,14 +2,27 @@
 {
   display:flex;
   flex-direction: row;
+  @include tablets
+  {
+    flex-direction: column;
+  }
 }
 
 .burger
 {
-
+  @include tablets
+  {
+    display: flex;
+    justify-content: center;
+    margin:0;
+  }
   margin-left:97px;
   img
   {
-    width:451px;
+    width:rem(451px);
+    @include tablets
+    {
+      width: rem(333px);
+    }
   }
 }

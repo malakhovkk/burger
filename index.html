@@ -42,9 +42,14 @@
 							</li>
 						</ul>
 					</nav>
-					<div class="order">
-					<a class="order__link" href="#">Заказать</a>
-					</div>
+
+						<div class="order">
+						<a class="order__link" href="#">Заказать</a>
+						</div>
+						<div class="mobile">
+							<img class="mobile__menu_button" src="./img/menu_button.png">
+						</div>
+
 					</header>
 
 				<div class="main">
@@ -78,35 +83,47 @@
 						<ul class="best__items">
 							<li class="best__item">
 								<div class="best__icon">
-									<img class="best__img-meat" src="img/meat.png">
+									<svg class="best__img-meat">
+										<use xlink:href="./svg/sprite.svg#meat"></use>
+									</svg>
 								</div>
-								<div class="best__caption">
-									100% свежее мясо
-								</div>
-								<div class="best__description">
-									Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
-								</div>
-							</li>
-							<li class="best__item">
-								<div class="best__icon">
-									<img class="best__img-hand" src="img/hand.png">
-								</div>
-								<div class="best__caption">
-									Ручная сборка
-								</div>
-								<div class="best__description">
-									Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.
+								<div class="best__text">
+									<div class="best__caption">
+										100% свежее мясо
+									</div>
+									<div class="best__description">
+										Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+									</div>
 								</div>
 							</li>
 							<li class="best__item">
 								<div class="best__icon">
-									<img class="best__img-natural" src="img/natural.png">
+									<svg class="best__img-hand">
+										<use xlink:href="./svg/sprite.svg#hand"></use>
+									</svg>
 								</div>
-								<div class="best__caption">
-										Натуральные ингредиенты
+								<div class="best__text">
+									<div class="best__caption">
+										Ручная сборка
+									</div>
+									<div class="best__description">
+										Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.
+									</div>
 								</div>
-								<div class="best__description">
-									Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
+							</li>
+							<li class="best__item">
+								<div class="best__icon">
+									<svg class="best__img-natural">
+										<use xlink:href="./svg/sprite.svg#natural"></use>
+									</svg>
+								</div>
+								<div class="best__text">
+									<div class="best__caption">
+											Натуральные ингредиенты
+									</div>
+									<div class="best__description">
+										Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
+									</div>
 								</div>
 							</li>
 						</ul>
@@ -214,7 +231,6 @@
 				</ul>
 		</section>
 		<section class="team">
-			<div class="container">
 				<div class="team__accordeon">
 					<div class="team__name">
 						Команда
@@ -297,6 +313,175 @@
 					</div>
 
 				</div>
+		</section>
+		<section class="menu">
+			<div class="menu__title">
+					Меню
+				<ul class="menu__acordeon">
+					<li class="menu__item--active">
+						<a class="menu__link menu__meat" href="#" >
+                <div class="menu__link-caption">Для мясоедов</div>
+
+						</a>
+						<div class="menu__description">
+					Речевой акт редуцирует диалегктический характер. Развивая на эту тему, заимствование редуцирует конструктивный механизм сочленений.
+				</div>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link menu__veg" href="#" >
+                <div class="menu__link-caption">Вегетарианское</div>
+						</a>
+						<div class="menu__description">
+						Речевой акт редуцирует диалегктический характер. Развивая на эту тему, заимствование редуцирует конструктивный механизм сочленений.
+						</div>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link menu__diet" href="#" >
+								<div class="menu__link-caption">Диетическое</div>
+						</a>
+						<div class="menu__description">
+						Речевой акт редуцирует диалегктический характер. Развивая на эту тему, заимствование редуцирует конструктивный механизм сочленений.
+						</div>
+
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="map">
+			<div class="map__content">
+				<footer class="footer">
+					<div class="footer__left">
+							<div class="footer__address">
+								Санкт-Петербург, ул.Бабушкина, д.12/1, 15
+							</div>
+							<div class="footer__phone">
+								<svg class="footer__img">
+									<use xlink:href="./svg/sprite.svg#phone"></use>
+								</svg>
+								 +7 (812) 377-13-77
+
+							</div>
+					</div>
+					<div class="footer__right">
+						<ul class="social">
+							<li class="social__vk">
+								<img class="social__img" src="./img/vk.png">
+							</li>
+							<li class="social__fb">
+								<img class="social__img" src="./img/fb.png">
+							</li>
+							<li class="social__inst">
+								<img class="social__img" src="./img/inst.png">
+							</li>
+							<li class="social__twitter">
+								<img class="social__img" src="./img/twitter.png">
+							</li>
+						</ul>
+					</div>
+				</footer>
+			</div>
+		</section>
+		<section class="orderblock">
+			<div class="container">
+				<div class="orderblock__title">
+					Закажите доставку
+				</div>
+				<form class="orderblock__form">
+					<div class="orderblock__first">
+							<div class="orderblock__double">
+							<label class="orderblock__block">
+								<div class="orderblock__caption">
+									Имя
+								</div>
+								<input class="orderblock__input" name="name">
+							</label>
+							<label class="orderblock__block">
+								<div class="orderblock__caption">
+									Телефон
+								</div>
+								<input class="orderblock__input" name="phone">
+							</label>
+						</div>
+						<div class="orderblock__single">
+							<label class="orderblock__block">
+								<div class="orderblock__caption">
+									Улица
+								</div>
+								<input class="orderblock__input" name="street">
+							</label>
+						</div>
+						<div class="orderblock__poker">
+							<label class="orderblock__block">
+								<div class="orderblock__caption">
+									Дом
+								</div>
+								<input class="orderblock__input" name="house">
+							</label>
+							<label class="orderblock__block">
+								<div class="orderblock__caption">
+									Корпус
+								</div>
+								<input class="orderblock__input" name="corps">
+							</label>
+							<label class="orderblock__block">
+								<div class="orderblock__caption">
+									Квартира
+								</div>
+								<input class="orderblock__input" name="apartament">
+							</label>
+							<label class="orderblock__block">
+								<div class="orderblock__caption">
+									Этаж
+								</div>
+								<input class="orderblock__input" name="floor">
+							</label>
+						</div>
+					</div>
+					<div class="orderblock__second">
+							<div class="orderblock__comment">
+								<label class="orderblock__block">
+									<div class="orderblock__caption">
+										Комментарий
+									</div>
+										<textarea class="orderblock__input" name="comment"></textarea>
+								</label>
+						</div>
+
+						<div class="orderblock__block orderblock__radio-btn">
+							<label class="orderblock__radio">
+								<input class="orderblock__radio-elem" type="radio" name="payment">
+								<div class="orderblock__radio-hidden">
+								</div>
+								<div class="orderblock__radio-caption">
+									Потребуется сдача
+								</div>
+							</label>
+							<label class="orderblock__radio">
+								<input class="orderblock__radio-elem" type="radio" name="payment">
+								<div class="orderblock__radio-hidden">
+								</div>
+								<div class="orderblock__radio-caption">
+									Оплата картой
+								</div>
+							</label>
+						</div>
+						<div class="orderblock__block orderblock__radio-btn">
+							<label class="orderblock__checkbox">
+								<input class="orderblock__radio-checkbox-elem" type="checkbox" name="call">
+								<div class="orderblock__radio-checkbox-hidden">
+								</div>
+								<div class="orderblock__radio-caption">
+									Не перезванивать
+								</div>
+							</label>
+						</div>
+						<button type="submit" value="Submit" class="order_button">Заказать</button>
+						<div class="clear">
+							<a class="clear__link" href="#">Очистить</a>
+						</div>
+
+					</div>
+				</form>
 			</div>
 		</section>
 	</div>

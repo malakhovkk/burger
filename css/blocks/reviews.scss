@@ -17,8 +17,12 @@
   }
   &__hover
   {
-    padding-left: 19px;
-    padding-top: 50px;
+    @include tablets
+    {
+      padding-top:rem(15px);
+    }
+    padding-left: rem(19px);
+    padding-top: rem(50px);
     position: absolute;
     top: 0;
     left: 0;
@@ -28,6 +32,11 @@
   }
   &__item
   {
+    @include tablets
+    {
+      width: 50%;
+      height: 25%;
+    }
     list-style-type: none;
     width: 25%;
     height: 50%;
@@ -44,16 +53,20 @@
   {
     color: #ffffff;
     font-family: Ubuntu-Regular;
-    font-size: 14px;
+    font-size:rem(14px);
     font-weight: 300;
-    line-height: 24px;
+    line-height: rem(24px);
+    @include phones
+    {
+      display: none;
+    }
   }
   &__title
   {
     color: #ffffff;
     font-family: Gagalin-Regular;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 400;
-    line-height: 28.11px;
+    line-height: rem(28.11px);
   }
 }

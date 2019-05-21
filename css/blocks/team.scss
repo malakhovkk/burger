@@ -1,21 +1,29 @@
 .team
 {
   position: relative;
-  background-size: 100%;
+  background-size: cover;
   width:100%;
-  min-height: 650px;
+  min-height: rem(650px);
   height:100vh;
   background-image: url("../img/team_background.png");
   background-repeat: no-repeat;
+
   &__accordeon
   {
+    @include tablets
+    {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
     position: absolute;
     top: 0;
     left: 50%;
     width:50%;
     background-color: #2f3234;
     opacity: 0.93;
-    min-height: 650px;
+    min-height: rem(650px);
     height:100vh;
     display: flex;
     align-items: center;
@@ -26,15 +34,20 @@
   {
     text-transform: uppercase;
     font-family: Gagalin-Regular;
-    font-size: 72px;
+    font-size: rem(72px);
     font-weight: 400;
     color: #f9b43b;
-    padding-bottom:56px;
+    padding-bottom:rem(56px);
   }
   &__member
   {
-    width: 347px;
-    padding-top: 35px;
+    @include tablets
+    {
+      display: flex;
+      flex-direction: column;
+    }
+    width: rem(347px);
+    padding-top: rem(35px);
     .team__description
     {
       height: 0;
@@ -42,8 +55,8 @@
     }
     &--active
     {
-      padding-top: 35px;
-      width: 347px;
+      padding-top: rem(35px);
+      width: rem(347px);
       display: flex;
       flex-direction: column;
       .team__fullname
@@ -53,8 +66,11 @@
         {
           content: '';
           position: absolute;
-          left:-15px;
-
+          left:rem(-15px);
+          @include tablets
+          {
+            left: 30%;
+          }
           border: 7px solid transparent;
           border-bottom-color: #f9b43b;;
           border-top: 0;
@@ -65,7 +81,7 @@
   }
   &__right
   {
-    margin-left: 21px;
+    margin-left:rem(21px);
   }
   &__triangle
   {
@@ -74,15 +90,20 @@
   }
   &__img_triangle
   {
-    width: 9px;
+    width: rem(9px);
   }
   &__fullname
   {
+    @include tablets
+    {
+      display: flex;
+      justify-content: center;
+    }
     position: relative;
-    padding-left:10px;
+    padding-left:rem(10px);
     color: #ffffff;
     font-family: Gagalin-Regular;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -90,23 +111,48 @@
     {
       content: '';
       position: absolute;
-      left:-15px;
-
+      left:rem(-15px);
+      @include tablets
+      {
+        left: 30%;
+      }
       border: 7px solid transparent;
       border-top-color: #f9b43b;;
       border-bottom: 0;
     }
   }
+  &__avatar
+  {
+    @include tablets
+    {
+      display: flex;
+      justify-content: center;
+    }
+  }
   &__img_avatar
   {
-    width:100px;
+    width:rem(100px);
+    height:rem(100px);
     border-radius: 50%;
   }
   &__description
   {
-    padding-top: 17px;
+    padding-top: rem(17px);
     display: flex;
     flex-direction: row;
+    @include tablets
+    {
+      display: flex;
+      flex-direction: column;
+    }
+    .team__job , .team__remark
+    {
+      @include tablets
+      {
+        text-align: center;
+      }
+    }
+
   }
   &__right
   {
@@ -115,15 +161,23 @@
   }
   &__remark
   {
-    width: 208px;
-    padding-top: 20px;
+    width: rem(208px);
+    padding-top:rem(20px);
+  }
+  &__job
+  {
+    @include tablets
+    {
+      padding-top:rem(10px);
+    }
   }
   &__job, &__remark
   {
 
     color: #ffffff;
     font-family: Ubuntu-Regular;
-    font-size: 14px;
+    font-size: rem(14px);
+    width:100%;
   }
   &__job
   {

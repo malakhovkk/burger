@@ -1,11 +1,12 @@
 .hero
 {
   width:100%;
-  min-height:650px;
+  min-height:rem(650px);
   height:100vh;
   background-image: url("../img/background.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  min-height: rem(800px);
   .container
   {
     display: flex;

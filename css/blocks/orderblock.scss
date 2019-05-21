@@ -43,13 +43,12 @@
   &__first
   {
     width:45%;
-
-    margin-left: 5%;
     float: left;
     @include tablets
     {
       float:none;
       width:90%;
+      margin-left: 5%;
     }
   }
   &__block

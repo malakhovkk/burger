@@ -54,13 +54,12 @@
     color: #ffffff;
     font-family: Ubuntu-Regular;
     font-size:rem(14px);
-    @include tablets
-    {
-      font-size: rem(14px);
-      line-height: 1;
-    }
     font-weight: 300;
     line-height: rem(24px);
+    @include tablets
+    {
+      font-size: rem(12px);
+    }
     @include phones
     {
       display: none;

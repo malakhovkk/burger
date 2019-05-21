@@ -587,7 +587,7 @@ body, html {
     line-height: 1; }
     @media screen and (max-width: 768px) {
       .reviews__text {
-        font-size: 0.75rem; } }
+        font-size: 0.625rem; } }
     @media screen and (max-width: 480px) {
       .reviews__text {
         display: none; } }

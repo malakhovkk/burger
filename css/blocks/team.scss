@@ -100,7 +100,6 @@
       justify-content: center;
     }
     position: relative;
-    padding-left:rem(10px);
     color: #ffffff;
     font-family: Gagalin-Regular;
     font-size: rem(14px);
@@ -121,8 +120,16 @@
       border-bottom: 0;
     }
   }
+  li
+  {
+    list-style-type: none;
+  }
   &__avatar
   {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    width:100px;
     @include tablets
     {
       display: flex;
@@ -131,10 +138,14 @@
   }
   &__img_avatar
   {
-    width:rem(100px);
-    height:rem(100px);
-    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
   }
+
+
+
   &__description
   {
     padding-top: rem(17px);
@@ -187,5 +198,8 @@
   {
     font-weight:300;
   }
-
+  &__members
+  {
+    margin-left:rem(20px);
+  }
 }

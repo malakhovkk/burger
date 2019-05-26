@@ -1,9 +1,11 @@
 $phones: 480px;
 $tablets: 768px;
 $laptop: 992px;
-$desktop: 1200px;
+$desktop: 1100px;
 
+//media
 @import "_misc/media.scss";
+
 //normalize
 @import "_misc/normalize.scss";
 
@@ -11,7 +13,7 @@ $desktop: 1200px;
 @import "_misc/fonts.scss";
 @import "_misc/layouts.scss";
 
-//mdeia
+
 
 //blocks
 @import "blocks/hero.scss";

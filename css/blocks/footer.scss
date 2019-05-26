@@ -5,8 +5,11 @@
   height: rem(60px);
   width: 100%;
   background-color: black;
-  display: flex;
-  flex-direction: row;
+  &__content
+  {
+    display: flex;
+    flex-direction: row;
+  }
   @include phones
   {
     height:rem(116px);

@@ -37,7 +37,7 @@
     font-size: rem(72px);
     font-weight: 400;
     color: #f9b43b;
-    padding-bottom:rem(56px);
+    margin-bottom:rem(56px);
   }
   &__member
   {
@@ -47,7 +47,7 @@
       flex-direction: column;
     }
     width: rem(347px);
-    padding-top: rem(35px);
+    margin-top: rem(35px);
     .team__description
     {
       height: 0;

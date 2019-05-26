@@ -44,6 +44,7 @@
       left: 50%;
       top: 100%;
       margin-top: rem(-20px);
+      z-index: 2;
     }
   }
   &__item
@@ -51,12 +52,24 @@
     list-style-type: none;
     float: left;
     height: 100%;
+    position: relative;
+    &:after
+    {
+      position: absolute;
+      top:0;
+      left:0;
+      content: '';
+      background-color: #2f3234;
+      opacity: 0.3;
+      height: 100%;
+      width: 80px;
+      z-index: 1;
+    }
     &--active
     {
       list-style-type: none;
       height: 100%;
       float: left;
-
       .menu__description
       {
         font-family: Ubuntu-Regular;
@@ -68,9 +81,20 @@
         opacity: 0.93;
         height: 100%;
         padding-left:rem(20px);
+        padding-right: rem(20px);
         padding-top:rem(50px);
       }
-
+      &:after
+      {
+        position: absolute;
+        top:0;
+        left:0;
+        content: '';
+        background-color: #2f3234;
+        opacity: 0.3;
+        height: 100%;
+        width: 80px;
+      }
 
 
     }

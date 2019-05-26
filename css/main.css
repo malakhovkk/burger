@@ -1334,7 +1334,7 @@ body, html {
 .clear {
   display: inline-block;
   margin-left: 1.25rem; }
-  .clear a {
+  .clear__link {
     text-decoration: none;
     font-family: Ubuntu-Regular;
     font-size: 0.875rem;

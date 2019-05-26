@@ -41,6 +41,10 @@
   }
   &__member
   {
+    &:nth-child(1)
+    {
+      margin-top:0;
+    }
     @include tablets
     {
       display: flex;
@@ -66,7 +70,7 @@
         {
           content: '';
           position: absolute;
-          left:rem(-15px);
+          left:rem(-35px);
           @include tablets
           {
             left: 30%;
@@ -110,7 +114,7 @@
     {
       content: '';
       position: absolute;
-      left:rem(-15px);
+      left:rem(-35px);
       @include tablets
       {
         left: 30%;
@@ -130,6 +134,8 @@
     overflow: hidden;
     border-radius: 50%;
     width:100px;
+    height:100px;
+    flex-shrink: 0;
     @include tablets
     {
       display: flex;
@@ -142,19 +148,21 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    height: 100%;
   }
 
 
 
   &__description
   {
-    padding-top: rem(17px);
+    margin-top: rem(17px);
     display: flex;
     flex-direction: row;
     @include tablets
     {
       display: flex;
       flex-direction: column;
+      align-items: center;
     }
     .team__job , .team__remark
     {

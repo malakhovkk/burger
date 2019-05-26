@@ -878,6 +878,8 @@ body, html {
   .team__member {
     width: 21.6875rem;
     margin-top: 2.1875rem; }
+    .team__member:nth-child(1) {
+      margin-top: 0; }
     @media screen and (max-width: 1100px) {
       .team__member {
         display: -webkit-box;
@@ -905,7 +907,7 @@ body, html {
         .team__member--active .team__fullname::before {
           content: '';
           position: absolute;
-          left: -0.9375rem;
+          left: -2.1875rem;
           border: 7px solid transparent;
           border-bottom-color: #f9b43b;
           border-top: 0; }
@@ -946,7 +948,7 @@ body, html {
     .team__fullname::before {
       content: '';
       position: absolute;
-      left: -0.9375rem;
+      left: -2.1875rem;
       border: 7px solid transparent;
       border-top-color: #f9b43b;
       border-bottom: 0; }
@@ -959,7 +961,10 @@ body, html {
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-    width: 100px; }
+    width: 100px;
+    height: 100px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0; }
     @media screen and (max-width: 1100px) {
       .team__avatar {
         display: -webkit-box;
@@ -974,9 +979,10 @@ body, html {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    height: 100%; }
   .team__description {
-    padding-top: 1.0625rem;
+    margin-top: 1.0625rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -992,7 +998,10 @@ body, html {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: column; } }
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
     @media screen and (max-width: 1100px) {
       .team__description .team__job, .team__description .team__remark {
         text-align: center; } }
@@ -1350,7 +1359,11 @@ body, html {
     font-family: Ubuntu-Regular;
     font-size: 0.875rem;
     font-weight: 300;
-    color: white; }
+    color: white;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent; }
 
 .mobile {
   display: none; }

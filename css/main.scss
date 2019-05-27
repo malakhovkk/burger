@@ -3,9 +3,7 @@ $tablets: 768px;
 $laptop: 992px;
 $desktop: 1100px;
 
-//media
 @import "_misc/media.scss";
-
 //normalize
 @import "_misc/normalize.scss";
 
@@ -13,7 +11,7 @@ $desktop: 1100px;
 @import "_misc/fonts.scss";
 @import "_misc/layouts.scss";
 
-
+//mdeia
 
 //blocks
 @import "blocks/hero.scss";
@@ -37,5 +35,5 @@ $desktop: 1100px;
 @import "blocks/orderblock.scss";
 @import "blocks/clear.scss";
 @import "blocks/menu_button.scss";
-@import "blocks/mobile.scss";
 @import "blocks/slider.scss";
+@import "blocks/mobile.scss";

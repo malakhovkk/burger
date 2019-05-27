@@ -1,0 +1,75 @@
+.navigation_mobile
+{
+  display: none;
+  &__menu
+  {
+    position: fixed;
+    margin:0;
+    top:0;
+    left:0;
+    background-color: grey;
+    width:100vw;
+    height:100vh;
+    background-color:#2f3234fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__item
+  {
+    list-style-type: none;
+    margin:18px 0;
+    position: relative;
+    a
+    {
+      text-transform: uppercase;
+      color:white;
+      font-family: Ubuntu-Regular;
+      font-size: rem(24px);
+      font-weight: 500;
+      line-height: rem(30px);
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    &:after
+    {
+      position: absolute;
+      top: 150%;
+      left: 50%;
+      content: '';
+      width: 4px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: white;
+    }
+    &:last-child
+    {
+      &:after
+      {
+        display: none;
+      }
+    }
+  }
+}
+.exit
+{
+  position: fixed;
+  top:31px;
+  right:19px;
+  display: none;
+  cursor: pointer;
+}
+.logo_mobile
+{
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top:rem(15px);
+  left: rem(15px);
+  &__svg
+  {
+    width: rem(92px);
+    height:rem(69px);
+  }
+}

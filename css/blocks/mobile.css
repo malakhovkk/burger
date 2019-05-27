@@ -1,0 +1,65 @@
+.navigation_mobile {
+  display: none; }
+  .navigation_mobile__menu {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background-color: grey;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2f3234fc;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .navigation_mobile__item {
+    list-style-type: none;
+    margin: 18px 0;
+    position: relative; }
+    .navigation_mobile__item a {
+      text-transform: uppercase;
+      color: white;
+      font-family: Ubuntu-Regular;
+      font-size: rem(24px);
+      font-weight: 500;
+      line-height: rem(30px);
+      text-transform: uppercase;
+      text-decoration: none; }
+    .navigation_mobile__item:after {
+      position: absolute;
+      top: 150%;
+      left: 50%;
+      content: '';
+      width: 4px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: white; }
+    .navigation_mobile__item:last-child:after {
+      display: none; }
+
+.exit {
+  position: fixed;
+  top: 31px;
+  right: 19px;
+  display: none;
+  cursor: pointer; }
+
+.logo_mobile {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: rem(15px);
+  left: rem(15px); }
+  .logo_mobile__svg {
+    width: rem(92px);
+    height: rem(69px); }

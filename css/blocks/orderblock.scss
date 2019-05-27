@@ -11,7 +11,7 @@
   min-height: rem(800px);
   &__form
   {
-    padding-top: rem(30px);
+    margin-top: rem(30px);
   }
   &__caption
   {
@@ -23,7 +23,6 @@
     font-family: Gagalin-Regular;
     font-size: rem(72px);
     font-weight: 400;
-    padding-top: 10%;
     text-align: center;
   }
   color:white;
@@ -57,6 +56,10 @@
     width: 100%;
     margin-left:20px;
   }
+  &__block:nth-child(1)
+  {
+    margin-left: 0;
+  }
   &__input
   {
     width:100%;
@@ -89,7 +92,7 @@
     }
     @include phones
     {
-      padding-top:rem(15px);
+      margin-top:rem(15px);
     }
   }
   &__radio-hidden
@@ -121,11 +124,12 @@
   &__radio-caption
   {
     display: inline-block;
-    padding-left: rem(8px);
+    margin-left: rem(8px);
   }
   &__radio-btn
   {
-    padding-top:rem(20px);
+    margin-top:rem(20px);
+    margin-left:0;
   }
   &__radio
   {
@@ -141,6 +145,13 @@
     border-radius: 3px;
     vertical-align: middle;
   }
+
+}
+.orderblock .container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .orderblock__radio-elem:checked + .orderblock__radio-hidden:after
 {
@@ -168,10 +179,10 @@
 }
 .order_button
 {
+  height: 100%;
   color: white;
   padding: rem(10px) rem(15px);
   border-radius: 5px;
-  margin-left: rem(20px);
   font-size: rem(13px);
   font-weight: 500;
   font-family: Ubuntu-Regular;
